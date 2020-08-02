@@ -1,47 +1,91 @@
-body{
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     text-align: center;
-     padding: 10px;
-     font-weight: bold;
-     box-sizing: border-box;
-     color: black;
-     }
-h1{ color: rgb(14, 1, 1);
-    font-family: sans-serif;
-    text-transform: capitalize;
-    }
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+  font-weight: bold;
+  box-sizing: border-box;
+  color: black;
+}
+h1 {
+  color: rgb(14, 1, 1);
+  font-family: sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+}
 
-section {background-color: rgba(153,153,153);
-    margin: 10px;
+section {
+  background-color: rgba(153, 153, 153);
+  margin: 10px;
+  width: 30%;
+  height: auto;
+  border: 2px solid black;
+}
+
+div section {
+  position: relative;
+  float: left;
+}
+
+section p {
+  position: relative;
+  clear: top left;
+  color: white;
+  margin-top: 0px;
+  float: right;
+  border: 2px solid black;
+  border-top: 0px;
+  border-right: 0px;
+}
+
+.chickenbox {
+  background-color: rgba(213, 152, 152);
+  color: black;
+  text-align: center;
+}
+.beefbox {
+  background-color: rgba(193, 69, 67);
+  color: white;
+  text-align: center;
+}
+.sushibox {
+  background-color: rgba(229, 209, 152);
+  color: black;
+  text-align: center;
+}
+
+article {
+  padding: 20px;
+}
+
+@media (min-width: 992px) {
+  section {
     width: 30%;
-    height:auto;
-    border: 2px solid black; }
-        
-    div section{position: relative;
-            float: left;}
-
-section p {position: relative;
-           clear: top left;
-           color: white;
-           margin-top: 0px;
-           float: right ;
-           border: 2px solid black;
-           border-top: 0px;
-           border-right: 0px;}
-
-    .a{background-color: rgba(213,152,152);color: black;}
-    .b{background-color: rgba(193,69,67);color: white;}
-    .c{background-color: rgba(229,209,152);color: black;}
-
-    article{padding: 20px;}
-
-
-    @media (min-width :992px) {
-        section {width: 30%; } p{width: 30%;}
-    }
-    @media (min-width :768px) and (max-width:991px) {
-        section {width: 45%; } p{width:30%}
-    }
-    @media (max-width :767px) {
-        section {width: 95%; } p{width:40%}
-    }
+  }
+  p {
+    width: 30%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  section {
+    width: 45%;
+  }
+  p {
+    width: 30%;
+  }
+  #md1 {
+    width: 33%;
+  }
+  #md2 {
+    width: 33%;
+  }
+  #md3 {
+    width: 70%;
+  }
+}
+@media (max-width: 767px) {
+  section {
+    width: 95%;
+  }
+  p {
+    width: 30%;
+  }
+}
